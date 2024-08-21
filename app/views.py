@@ -3,8 +3,6 @@ from rest_framework.response import Response
 from rest_framework.decorators import action
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework.exceptions import MethodNotAllowed
-from drf_spectacular.utils import extend_schema
 from .serializers import UserSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
